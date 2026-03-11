@@ -1,0 +1,2 @@
+# softgrowtech_T1_personality_analysis_by_CV
+personality trait prediction from CVs
