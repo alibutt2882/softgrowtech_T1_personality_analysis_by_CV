@@ -1,0 +1,162 @@
+/* Custom CSS for CV Personality Analyzer */
+
+/* Global Styles */
+.stApp {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Button Styles */
+.stButton > button {
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.stButton > button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Card Styles */
+.css-1r6slb0 {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 15px;
+    padding: 20px;
+    color: white;
+}
+
+/* Metric Styles */
+.css-1xarl3l {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Sidebar Styles */
+.css-1d391kg {
+    background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
+}
+
+.css-1d391kg .stButton > button {
+    background: rgba(255,255,255,0.2);
+    color: white;
+    border: none;
+}
+
+.css-1d391kg .stButton > button:hover {
+    background: rgba(255,255,255,0.3);
+}
+
+/* File Uploader Styles */
+.stFileUploader {
+    border: 2px dashed #4CAF50;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Progress Bar Styles */
+.stProgress > div > div > div > div {
+    background: linear-gradient(90deg, #4CAF50, #8BC34A);
+}
+
+/* Tab Styles */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 8px;
+}
+
+.stTabs [data-baseweb="tab"] {
+    border-radius: 8px 8px 0 0;
+    padding: 10px 20px;
+    background-color: #f0f2f6;
+}
+
+/* Form Styles */
+.stForm {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Alert Styles */
+.stAlert {
+    border-radius: 8px;
+    border-left-width: 4px;
+}
+
+/* Loading Spinner */
+.stSpinner > div {
+    border-color: #4CAF50 transparent transparent transparent;
+}
+
+/* Personality trait card */
+.trait-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 12px;
+    padding: 15px 20px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+/* Score badge */
+.score-badge {
+    display: inline-block;
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 20px;
+    padding: 4px 12px;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+/* Hero gradient banner */
+.hero-banner {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 15px;
+    padding: 40px;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .css-1d391kg {
+        width: 100%;
+    }
+}
+
+/* Dark Mode Overrides */
+@media (prefers-color-scheme: dark) {
+    .stApp {
+        background-color: #1a1a1a;
+    }
+
+    .stMarkdown {
+        color: #ffffff;
+    }
+}
+
+/* Custom Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.stMarkdown {
+    animation: fadeIn 0.5s ease-out;
+}
+
+/* History table rows */
+.history-row {
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 10px;
+    transition: box-shadow 0.2s ease;
+}
+
+.history-row:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
